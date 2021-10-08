@@ -1,0 +1,13 @@
+Package: regnal
+Type: Package
+Title: Regnal Dates
+Version: 0.1.0
+Authors@R: c(
+  person("Baker", "Ed", email = "ed@ebaker.me.uk", role = c("aut", "cre"))
+  )
+Description: Manage UK regnal dates, including converting regnal years to
+    standard date formats.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
