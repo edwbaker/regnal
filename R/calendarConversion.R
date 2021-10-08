@@ -2,15 +2,35 @@ julianDayMonths <- function(){
   return(c(306, 337, 0, 31, 61, 92, 122, 153, 184, 214, 245, 275))
 }
 
-gregorian2julianDay <- function(y,m,d) {
- Z <- y + trunc((m-14)/12)
- v <- julianDayMonths()
- f <- v[m]
- jd <- d+f+365*Z+floor(Z/4)-floor(Z/100)+floor(Z/400) + 1721118.5
- return(jd)
+julian2gregorian <- function(date) {
+  jd <- julian2julianDay(date)
+  return(julianDay2gregorian(jd))
 }
 
-julian2julianDay <- function(y,m,d) {
+gregorian2julian <- function(date) {
+  jd <- gregorian2julianDay(date)
+  return(julianDay2julian(jd))
+}
+
+gregorian2julianDay <- function(date) {
+  d <- as.Date(date)
+  y <- as.integer(format(d, "%Y"))
+  m <- as.integer(format(d, "%m"))
+  d <- as.integer(format(d, "%d"))
+
+  Z <- y + trunc((m-14)/12)
+  v <- julianDayMonths()
+  f <- v[m]
+  jd <- d+f+365*Z+floor(Z/4)-floor(Z/100)+floor(Z/400) + 1721118.5
+  return(jd)
+}
+
+julian2julianDay <- function(date) {
+  d <- as.Date(date)
+  y <- as.integer(format(d, "%Y"))
+  m <- as.integer(format(d, "%m"))
+  d <- as.integer(format(d, "%d"))
+
   Z <- y + trunc((m-14)/12)
   v <- julianDayMonths()
   f <- v[m]
@@ -27,12 +47,12 @@ julianDay2gregorian <- function(jd) {
   Y <- floor(B/365.25)
   C <- Z + A - floor(A/4) - floor(365.25*Y)
   M <- trunc((5*C + 456)/ 153)
-  v <- julianDayMonths()
-  f <- v[M]
+  v <- c(0, 31, 61, 92, 122, 153, 184, 214, 245, 275, 306, 337)
+  f <- v[(M-2)]
   D <- C - f + R
   Y <- Y + trunc(M/13)
   M <- M - 12*trunc(M/13)
-  ret <- paste(Y,M,D, sep="/")
+  ret <- paste(Y,M,D, sep="-")
   return(ret)
 }
 
@@ -44,7 +64,7 @@ julianDay2julian <- function(jd) {
   C <- Z - floor(365.25*Y)
   M <- trunc((5*C + 456)/ 153)
   v <- julianDayMonths()
-  f <- v[M]
+  f <- v[M%%12]
   D <- C - f + R
   Y <- Y + trunc(M/13)
   M <- M - 12*trunc(M/13)
@@ -58,6 +78,7 @@ julianDay2julian <- function(jd) {
 #' @return Corresponding Modified Julian Day number
 #' @export
 #' @seealso mjd2julianDay
+#' @source Baum,P (2020) Date Algorithms.
 #' @examples
 #' julianDay2mjd(0)
 #'
@@ -75,6 +96,7 @@ julianDay2mjd <- function(jd) {
 #' @return Corresponding Julian Day number
 #' @export
 #' @seealso julianDay2mjd
+#' @source Baum,P (2020) Date Algorithms.
 #' @examples
 #' mjd2julianDay(0)
 #'

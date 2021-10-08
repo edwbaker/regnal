@@ -3,6 +3,9 @@
 \name{mjd2julianDay}
 \alias{mjd2julianDay}
 \title{Convert Modified Julian Day to Julian Day}
+\source{
+Baum,P (2020) Date Algorithms.
+}
 \usage{
 mjd2julianDay(mjd)
 }
