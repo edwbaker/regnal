@@ -5,7 +5,7 @@
 \alias{UKregnal}
 \title{Start dates of UK regnal years.}
 \format{
-A data frame with X rows and 3 variables:
+A data frame with 4 variables:
 \describe{
   \item{Reign}{Monarch, full name}
   \item{JulianStart}{Start date in Julian system, YYYY-MM-DD}

@@ -51,3 +51,33 @@ julianDay2julian <- function(jd) {
   ret <- paste(Y,M,D, sep="/")
   return(ret)
 }
+
+#' Convert Julian Day to Modified Julian Day
+#'
+#' @param jd Modified Julian Day
+#' @return Corresponding Modified Julian Day number
+#' @export
+#' @seealso mjd2julianDay
+#' @examples
+#' julianDay2mjd(0)
+#'
+julianDay2mjd <- function(jd) {
+  return(jd - 2400000.5)
+}
+
+#' Convert Modified Julian Day to Julian Day
+#'
+#' Converts a Modified Julian Day (MJD) number (as used by some satellite
+#' systems) to a Julian Day number. A MJD of zero corresponds to midnight
+#' on November 17, 1858.
+#'
+#' @param mjd Modified Julian Day
+#' @return Corresponding Julian Day number
+#' @export
+#' @seealso julianDay2mjd
+#' @examples
+#' mjd2julianDay(0)
+#'
+mjd2julianDay <- function(mjd) {
+  return(mjd + 2400000.5)
+}
