@@ -9,7 +9,7 @@ regnalYear(date, region = "UK", system = "UK", abbr = FALSE)
 \arguments{
 \item{date}{Date to convert (YYYY-mm-dd)}
 
-\item{region}{Monarchy to use (currently UK)}
+\item{region}{Monarchy to use (UK, Scotland)}
 
 \item{system}{Date system of input (default UK)}
 
