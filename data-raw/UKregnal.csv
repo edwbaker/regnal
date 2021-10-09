@@ -1,26 +1,176 @@
-Reign,JulianStart,GregorianStart,Abbreviation,Format,UKStart,Notes
-William I,1066-12-25,,Will. I,$UKYEAR $REIGN,1,
-William II,1087-09-26,,Will. II,$UKYEAR $REIGN,1,
-Henry I,1100-08-05,,Hen. I,$UKYEAR $REIGN,1,
-Stephen,1135-12-22,,Steph.,$UKYEAR $REIGN,1,
-Henry II,1154-12-19,,Hen. II,$UKYEAR $REIGN,1,
-Richard I,1189-09-03,,Ric. I,$UKYEAR $REIGN,1,
-John,1199-05-27,,John,$UKYEAR $REIGN,1,
-Henry III,1216-10-28,,Hen. III,$UKYEAR $REIGN,1,
-Edward I,1272-11-20,,Edw. I,$UKYEAR $REIGN,1,
-Edward II,1307-07-08,,Edw. II,$UKYEAR $REIGN,1,
-Edward III,1327-01-25,,Edw. III,,,French Regnal
-Richard II,1377-06-22,,Ric. II,,,
-Henry IV,1399-09-30,,Hen. IV,,,
-Henry V,1413-03-21,,Hen. V,,,
-Henry VI,1422-09-01,,Hen. VI,,,
-Edward IV,1461-03-04,,Edw. IV,,,Also Hen. VI
-Edward V,1483-04-09,,Edw. V,,,
-Richard III,1483-06-26,,Ric. III,,,
-Henry VII,1485-08-22,,Hen. VII,,,
-Henry VIII,1509-04-22,,Hen. VIII,,,
-Edward VI,1547-01-28,,Edw. VI,,,
-Jane,1553-07-06,,Jane,,,
-Mary,1553-07-19,,Mary,,,
-Philip & Mary,1554-07-25,,P. & M.,,,
-Elizabeth I,1558-11-17,,Eliz. I,,,
+Reign,JulianStart,GregorianStart,Abbreviation,RegnalYear
+William I,1066-12-25,,Will. I,
+William II,1087-09-26,,Will. II,
+Henry I,1100-08-05,,Hen. I,
+Stephen,1135-12-22,,Steph.,
+Henry II,1154-12-19,,Hen. II,
+Richard I,1189-09-03,,Ric. I,
+John,1199-05-27,,John,1
+John,1200-05-18,,John,2
+John,1201-05-03,,John,3
+John,1202-05-23,,John,4
+John,1203-05-15,,John,5
+John,1204-06-03,,John,6
+John,1205-05-19,,John,7
+John,1206-05-11,,John,8
+John,1207-05-31,,John,9
+John,1208-05-15,,John,10
+John,1209-05-07,,John,11
+John,1210-05-27,,John,12
+John,1211-05-12,,John,13
+John,1212-05-03,,John,14
+John,1213-05-23,,John,15
+John,1214-05-08,,John,16
+John,1215-05-28,,John,17
+John,1216-05-19,,John,18
+Henry III,1216-10-28,,Hen. III,
+Edward I,1272-11-20,,Edw. I,
+Edward II,1307-07-08,,Edw. II,
+Edward III,1327-01-25,,Edw. III,
+Edward III,1340-01-25,,Edw. III,14 & 1
+Edward III,1341-01-25,,Edw. III,15 & 2
+Edward III,1342-01-25,,Edw. III,16 & 3
+Edward III,1343-01-25,,Edw. III,17 & 4
+Edward III,1344-01-25,,Edw. III,18 & 5
+Edward III,1345-01-25,,Edw. III,19 & 6
+Edward III,1346-01-25,,Edw. III,20 & 7
+Edward III,1347-01-25,,Edw. III,21 & 8
+Edward III,1348-01-25,,Edw. III,22 & 9
+Edward III,1349-01-25,,Edw. III,23 & 10
+Edward III,1350-01-25,,Edw. III,24 & 11
+Edward III,1351-01-25,,Edw. III,25 & 12
+Edward III,1352-01-25,,Edw. III,26 & 13
+Edward III,1353-01-25,,Edw. III,27 & 14
+Edward III,1354-01-25,,Edw. III,28 & 15 
+Edward III,1355-01-25,,Edw. III,29 & 16
+Edward III,1356-01-25,,Edw. III,30 & 17
+Edward III,1357-01-25,,Edw. III,31 & 18
+Edward III,1358-01-25,,Edw. III,32 & 19
+Edward III,1359-01-25,,Edw. III,33 & 20
+Edward III,1360-01-25,,Edw. III,34 & 21
+Edward III,1360-01-09,,Edw. III,34
+Edward III,1361-01-25,,Edw. III,35
+Edward III,1362-01-25,,Edw. III,36
+Edward III,1363-01-25,,Edw. III,37
+Edward III,1364-01-25,,Edw. III,38
+Edward III,1365-01-25,,Edw. III,39
+Edward III,1366-01-25,,Edw. III,40
+Edward III,1367-01-25,,Edw. III,41
+Edward III,1368-01-25,,Edw. III,42
+Edward III,1369-01-25,,Edw. III,43
+Edward III,1369-06-11,,Edw. III,43 & 30
+Edward III,1370-01-25,,Edw. III,44 & 31
+Edward III,1371-01-25,,Edw. III,45 & 32
+Edward III,1372-01-25,,Edw. III,46 & 33
+Edward III,1373-01-25,,Edw. III,47 & 34
+Edward III,1374-01-25,,Edw. III,48 & 35
+Edward III,1375-01-25,,Edw. III,49 & 36
+Edward III,1376-01-25,,Edw. III,50 & 37
+Edward III,1377-01-25,,Edw. III,51 & 38
+Richard II,1377-06-22,,Ric. II,
+Henry IV,1399-09-30,,Hen. IV,
+Henry V,1413-03-21,,Hen. V,
+Henry VI,1422-09-01,,Hen. VI,
+Edward IV,1461-03-04,,Edw. IV,
+Henry VI,1470-10-09,,Hen. VI,49 & 1
+Edward IV,1471-04-15,,Edw. IV,11
+Edward IV,1472-03-04,,Edw. IV,12
+Edward IV,1473-03-04,,Edw. IV,13
+Edward IV,1474-03-04,,Edw. IV,14
+Edward IV,1475-03-04,,Edw. IV,15
+Edward IV,1476-03-04,,Edw. IV,16
+Edward IV,1477-03-04,,Edw. IV,17
+Edward IV,1478-03-04,,Edw. IV,18
+Edward IV,1479-03-034,,Edw. IV,19
+Edward IV,1480-03-04,,Edw. IV,20
+Edward IV,1481-03-04,,Edw. IV,21
+Edward IV,1482-03-04,,Edw. IV,22
+Edward IV,1483-03-04,,Edw. IV,23
+Edward V,1483-04-09,,Edw. V,
+Richard III,1483-06-26,,Ric. III,
+Henry VII,1485-08-22,,Hen. VII,
+Henry VIII,1509-04-22,,Hen. VIII,
+Edward VI,1547-01-28,,Edw. VI,
+Jane,1553-07-06,,Jane,
+Mary,1553-07-19,,Mary,
+Philip & Mary,1554-07-25,,P. & M.,
+Elizabeth I,1558-11-17,,Eliz. I,
+James I,1603-03-24,,Jac. I,1 & 36
+James I,1603-07-24,,Jac. I,1 & 37
+James I,1604-03-24,,Jac. I,2 & 37
+James I,1604-07-24,,Jac. I,2 & 38
+James I,1605-03-24,,Jac. I,3 & 38
+James I,1605-07-24,,Jac. I,3 & 39
+James I,1606-03-24,,Jac. I,4 & 39
+James I,1606-07-24,,Jac. I,4 & 40
+James I,1607-03-24,,Jac. I,5 & 40
+James I,1607-07-24,,Jac. I,5 & 41
+James I,1608-03-24,,Jac. I,6 & 41
+James I,1608-07-25,,Jac. I,6 & 42
+James I,1609-03-24,,Jac. I,7 & 42
+James I,1609-07-24,,Jac. I,7 & 43
+James I,1610-03-24,,Jac. I,8 & 43
+James I,1610-07-24,,Jac. I,8 & 44
+James I,1611-03-24,,Jac. I,9 & 44
+James I,1611-07-24,,Jac. I,9 & 45
+James I,1612-03-24,,Jac. I,10 & 45
+James I,1612-07-24,,Jac. I,10 & 46
+James I,1613-03-24,,Jac. I,11 & 46
+James I,1613-07-24,,Jac. I,11 & 47
+James I,1614-03-24,,Jac. I,12 & 47
+James I,1614-07-24,,Jac. I,12 & 48
+James I,1615-03-24,,Jac. I,13 & 48
+James I,1615-07-24,,Jac. I,13 & 49
+James I,1616-03-24,,Jac. I,14 & 49
+James I,1616-07-24,,Jac. I,14 & 50
+James I,1617-03-24,,Jac. I,15 & 50
+James I,1617-07-24,,Jac. I,15 & 51
+James I,1618-03-24,,Jac. I,16 & 51
+James I,1618-07-24,,Jac. I,16 & 52
+James I,1619-03-24,,Jac. I,17 & 52
+James I,1619-07-24,,Jac. I,17 & 53
+James I,1620-03-24,,Jac. I,18 & 53
+James I,1620-07-24,,Jac. I,18 & 54
+James I,1621-03-24,,Jac. I,19 & 54
+James I,1621-07-24,,Jac. I,19 & 55
+James I,1622-03-24,,Jac. I,20 & 55
+James I,1622-07-24,,Jac. I,20 & 56
+James I,1623-03-24,,Jac. I,21 & 56
+James I,1623-07-24,,Jac. I,21 & 57
+James I,1624-03-24,,Jac. I,22 & 57
+James I,1624-07-24,,Jac. I,22 & 58
+James I,1625-03-24,,Jac. I,23 & 58
+Charles I,1625-03-27,,Car. I,
+Charles II,1649-01-30,,Car. II,
+James II,1685-02-06,,Jac. II,
+Interregnum,1688-12-12,,Interregnum,
+William & Mary,1689-02-13,,Wm. & Mar.,
+William III,1694-12-28,,Wm. III,6
+William III,1695-02-13,,Wm. III,7
+William III,1696-02-13,,Wm. III,8
+William III,1697-02-13,,Wm. III,9
+William III,1698-02-13,,Wm. III,10
+William III,1699-02-13,,Wm. III,11
+William III,1700-02-13,,Wm. III,12
+William III,1701-02-13,,Wm. III,13
+William III,1702-02-13,,Wm. III,14
+Anne,1702-03-08,,Anne,
+George I,1714-08-01,,Geo. I,
+George II,1727-06-11,,Geo. II,
+George II,,1753-06-22,Geo. II,27
+George II,,1754-06-22,Geo. II,28
+George II,,1755-06-22,Geo. II,29
+George II,,1756-06-22,Geo. II,30
+George II,,1757-06-22,Geo. II,31
+George II,,1758-06-22,Geo. II,32
+George II,,1759-06-22,Geo. II,33
+George II,,1760-06-22,Geo. II,34
+George III,,1760-10-25,Geo. III,
+George IV,,1820-01-29,Geo. IV,
+William IV,,1830-06-26,Wm. IV,
+Victoria,,1837-06-20,Vic.,
+Edward VII,,1901-01-22,Edw. VII,
+George V,,1910-05-06,Geo. V,
+Edward VIII,,1936-01-20,Edw. VIII,
+George VI,,1936-12-11,Geo. VI,
+Elizabeth II,,1952-02-06,Eliz. II,

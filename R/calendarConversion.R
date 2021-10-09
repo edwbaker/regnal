@@ -68,7 +68,7 @@ julianDay2julian <- function(jd) {
   D <- C - f + R
   Y <- Y + trunc(M/13)
   M <- M - 12*trunc(M/13)
-  ret <- paste(Y,M,D, sep="/")
+  ret <- paste(Y,M,D, sep="-")
   return(ret)
 }
 

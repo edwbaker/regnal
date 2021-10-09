@@ -1,10 +1,10 @@
-regnalYear <- function(date, region="UK", system="UK") {
+regnalYear <- function(date, region="UK", system="UK", abbr=FALSE) {
   if (region=="UK") {
-    return(regnalYearUK(date, system=system))
+    return(regnalYearUK(date, system=system, abbr=abbr))
   }
 }
 
-regnalYearUK <- function(date, system) {
+regnalYearUK <- function(date, system, abbr) {
   if (system=="UK") {
     if (date < "1752-09-02") {
       system <- "Julian"
@@ -21,15 +21,15 @@ regnalYearUK <- function(date, system) {
   }
   if (system=="Gregorian") {
     row <- max(which(date >= UKregnal$GregorianStart))
-    return(regnalYearFormat(date, UKregnal[row,], system=system))
+    return(regnalYearFormat(date, UKregnal[row,], system=system, abbr=abbr))
   }
   if (system=="Julian") {
     row <- max(which(date >= UKregnal$JulianStart))
-    return(regnalYearFormat(date, UKregnal[row,], system=system))
+    return(regnalYearFormat(date, UKregnal[row,], system=system, abbr=abbr))
   }
 }
 
-regnalYearFormat <- function(date, data, system) {
+regnalYearFormat <- function(date, data, system, abbr) {
   d <- as.Date(date)
   y <- as.integer(format(d, "%Y"))
   m <- as.integer(format(d, "%m"))
@@ -44,9 +44,20 @@ regnalYearFormat <- function(date, data, system) {
   mr <- as.integer(format(dr, "%m"))
   dr <- as.integer(format(dr, "%d"))
 
-  ry <- 1 #NEEDS WORK
+  if (data$RegnalYear == "") {
+    if (m>mr | (m==mr & d>= dr)) {
+      ry <- y-yr+1
+    } else {
+      ry <- y-yr
+    }
+  } else {
+    ry <- data$RegnalYear
+  }
 
-  return(paste(ry, data$Reign))
+  if (abbr==TRUE) {
+    return(paste(ry, data$Abbreviation))
+  } else {
+    return(paste(ry, data$Reign))
+  }
 }
-
 
