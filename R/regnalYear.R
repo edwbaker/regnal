@@ -1,3 +1,16 @@
+#' Convert date to regnal year
+#'
+#' @param date Date to convert (YYYY-mm-dd)
+#' @param region Monarchy to use (currently UK)
+#' @param system Date system of input (default UK)
+#' @param abbr Abbreviate monarch names
+#' @return Regnal year and reigning monarch
+#' @export
+#' @examples
+#' regnalYear("1067-01-01")
+#' regnalYear("1067-01-01", region="UK", system="Julian")
+#' regnalYear("1067-01-01", abbr=TRUE)
+#'
 regnalYear <- function(date, region="UK", system="UK", abbr=FALSE) {
   if (region=="UK") {
     return(regnalYearUK(date, system=system, abbr=abbr))

@@ -11,7 +11,7 @@ A data frame with 4 variables:
   \item{JulianStart}{Start date in Julian system, YYYY-MM-DD}
   \item{GregorianStart}{Start date in Gregorian system, YYYY-MM-DD}
   \item{Abbreviation}{Abbreviated form of data in Reign}
-  \item{Notes}{Miscellaneous related data}
+  \item{RegnalYear}{Used to store compound and complex years}
 }
 }
 \source{

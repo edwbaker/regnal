@@ -2,3 +2,4 @@
 
 export(julianDay2mjd)
 export(mjd2julianDay)
+export(regnalYear)
