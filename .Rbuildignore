@@ -1,5 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 build
+paper
 ^LICENSE\.md$
 ^data-raw$
